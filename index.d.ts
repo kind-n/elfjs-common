@@ -26,6 +26,7 @@ declare module "elfjs" {
 
         class BindDirective implements Elf.IDirective {
             onInitial (product: IComponent | HTMLElement, props: any): void;
+            onRenewal (product: IComponent | HTMLElement, props: any): void;
             onDispose (product: IComponent | HTMLElement, props: any): void;
         }
 
